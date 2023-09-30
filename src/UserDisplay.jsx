@@ -6,7 +6,7 @@ export default function UserDisplay(){
 
 	// let globalUserData = useContext(UserContext);
 
-	let {userData, setUserData} = useContext(UserContext);
+	let {userData, userDataDispatch} = useContext(UserContext);
 
 	return (
 		<div>
@@ -16,7 +16,8 @@ export default function UserDisplay(){
 			name="" 
 			id="" 
 			value={userData.jwt} 
-			onChange={(event) => setUserData({jwt: event.target.value})}   
+			// onChange={(event) => setUserData({jwt: event.target.value})}   
+			onChange={(event) => userDataDispatch({type:'setJwt', jwt: event.target.value})}   
 			/>
 			
 		</div>
