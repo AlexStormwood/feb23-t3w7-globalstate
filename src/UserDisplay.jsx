@@ -17,7 +17,14 @@ export default function UserDisplay(){
 			id="" 
 			value={userData.jwt} 
 			// onChange={(event) => setUserData({jwt: event.target.value})}   
-			onChange={(event) => userDataDispatch({type:'setJwt', jwt: event.target.value})}   
+			onChange={(event) => userDataDispatch(
+				{
+					type:'setJwt',
+					data: {
+						jwt: event.target.value
+					}
+				}
+				)}   
 			/>
 			
 		</div>
