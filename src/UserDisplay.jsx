@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { UserContext } from "./context/UserContext"
+import LogoutButton from "./LogoutButton";
 
 
 export default function UserDisplay(){
@@ -27,6 +28,7 @@ export default function UserDisplay(){
 				)}   
 			/>
 			
+			<LogoutButton />
 		</div>
 	)
 }

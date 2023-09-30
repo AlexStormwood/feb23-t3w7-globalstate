@@ -3,6 +3,7 @@ import ApiTester from './ApiTester';
 import UserGlobalData from './context/UserContext';
 import UserDisplay from './UserDisplay';
 import ConnectionProvider from './context/ConnectionContext';
+import LogoutButton from './LogoutButton';
 
 function App() {
 
@@ -15,6 +16,9 @@ function App() {
         <ConnectionProvider>
           <ApiTester />
           <UserDisplay />
+
+          <LogoutButton />
+
         </ConnectionProvider>
       </UserGlobalData>
 

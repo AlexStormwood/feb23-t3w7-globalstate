@@ -27,12 +27,12 @@ export const userReducer = (previousState, instructions) => {
 			return newState;
 		case "logout":
 			// newState = '';
-			return '';
+			return {jwt: ''};
 		default:
 			return newState;
 	}
 
-
-
 	return newState;
 }
+
+
