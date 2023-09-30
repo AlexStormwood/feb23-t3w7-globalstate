@@ -1,4 +1,5 @@
 import { useContext } from "react";
+// import ConnectionContext from "./context/ConnectionContext";
 import {ConnectionContext} from "./context/ConnectionContext";
 
 export default function ApiTester(){
