@@ -6,6 +6,14 @@ export const defaultConnectionData = {
 	url: "https://pokeapi.co/api/v2/pokemon/"
 }
 
-const ConnectionContext = createContext(defaultConnectionData);
+export const ConnectionContext = createContext(defaultConnectionData);
 
-export default ConnectionContext;
+export default function ConnectionProvider(props){
+
+
+	return(
+		<ConnectionContext.Provider value={defaultConnectionData}>
+			{props.children}
+		</ConnectionContext.Provider>
+	)
+}
